@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+.container__input {
+  position: absolute;
+  bottom: 85%;
+  left: 7%;
+  background: none;
+  border: 1px solid;
+  border-color: #dbdada;
+  height: 50px;
+  width: 86%;
+  padding: 10px;
+  border-radius: 92px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.input__text::placeholder {
+  font-size: 14px;
+  color: #dbdada;
+  font-family: "Open Sans";
+  /* padding: 5px; */
+  text-align: start;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.input__text {
+  border: none;
+  background: none;
+  outline: none;
+  backface-visibility: hidden;
+  color: rgb(254, 44, 85);
+  font-size: 16px;
+  line-height: 40px;
+  caret-color: rgb(254, 44, 85);
+  font-weight: 600;
+  width: 77%;
+  padding: 5px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.input__search {
+  color: #dbdada;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  transition: color 0.3s;
+}
+
+.input__search:hover {
+  color: rgb(254, 44, 85);
+}
+
+.input__clear {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+  margin-left: 75%;
+  color: #9f9f9c;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.input__clear:hover {
+  color: rgb(254, 44, 85);
+}
+
+/* media query */
+
+@media only screen and (max-width: 767px) {
+  .container__input {
+    bottom: 86%; /* Ajuste a posição verticalmente conforme necessário */
+    left: 5.2%; /* Ajuste a posição horizontalmente conforme necessário */
+    height: 50px;
+    width: 90%; /* Redimensione o width conforme necessário */
+  }
+
+  .input__text {
+    font-size: 14px;
+  }
+
+  .input__search:hover {
+    display: none;
+  }
+}
+
+.input__clear {
+  margin-left: 75%;
+}
+
+/* @media only screen and (max-width: 440px) {
+  .container__input {
+    width: 42vh;
+  }
+}
+
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+
+}
+
+@media only screen and (max-width: 360px) and (max-height: 740px) {
+
+} */
