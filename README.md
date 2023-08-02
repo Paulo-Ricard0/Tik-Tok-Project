@@ -1,6 +1,5 @@
 # Getting Started with Create React App
 
-Link para acessar o projeto: https://tiktok-clone-8cf26.firebaseapp.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
